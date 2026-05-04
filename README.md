@@ -48,3 +48,35 @@ API для оформлення оренди, повернення, скасув
 Обмеження на початкову заготовку: дозволена лише власна технічна заготовка Maven/JUnit/структури каталогів без будь-якої наперед реалізованої бізнес-логіки.
 
 Що вписати у відповідь Moodle: URL репозиторію.
+
+
+
+
+Копіюєш посилання виду https://github.com/твій-нік/назва-проєкту.git
+
+
+— Підключити Git в IntelliJ IDEA
+Якщо проєкт вже існує локально:
+В IntelliJ зверху: VCS → Enable Version Control Integration → Git → OK
+Потім відкриваєш термінал всередині IntelliJ (знизу вкладка Terminal):
+bashgit init
+git remote add origin https://github.com/твій-нік/назва-проєкту.git
+git branch -M main
+
+Створити гілку для роботи
+Ніколи не працюєш в main!
+bashgit checkout -b develop
+git checkout -b feature/назва-фічі
+Або через IntelliJ: правий нижній кут → main → New Branch
+
+
+Після того як щось написав:
+bashgit add .
+git commit -m "feat: add login form"
+Або через IntelliJ: Ctrl+K → пишеш повідомлення → Commit
+Правильні повідомлення комітів:
+feat: add user registration
+fix: correct validation error
+refactor: move auth to separate service
+
+bashgit push -u origin feature/назва-фічі
