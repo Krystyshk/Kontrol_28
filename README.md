@@ -52,7 +52,7 @@ API для оформлення оренди, повернення, скасув
 
 
 
-Копіюєш посилання виду http://github.com/твій-нік/назва-проєкту.git
+Копіюєш посилання виду //github.com/твій-нік/назва-проєкту.git
 
 
 — Підключити Git в IntelliJ IDEA
@@ -60,7 +60,7 @@ API для оформлення оренди, повернення, скасув
 В IntelliJ зверху: VCS → Enable Version Control Integration → Git → OK
 Потім відкриваєш термінал всередині IntelliJ (знизу вкладка Terminal):
 bashgit init
-git remote add origin http://github.com/твій-нік/назва-проєкту.git
+git remote add origin //github.com/твій-нік/назва-проєкту.git
 git branch -M main
 
 Створити гілку для роботи
